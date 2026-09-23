@@ -1,17 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class',
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
       colors: {
-        bg: '#0F1720',
-        surface: '#151F2B',
-        surface2: '#1B2733',
-        edge: '#263241',
-        ink: '#E6EDF3',
-        muted: '#8B98A5',
-        accent: '#5EEAD4',
-        'accent-dim': '#2DD4BF',
+        // Each token reads from a CSS variable so the same class names
+        // (bg-bg, text-ink, etc.) work in both themes — see src/index.css
+        // for the light (:root) and dark (.dark) variable values.
+        bg: 'rgb(var(--color-bg) / <alpha-value>)',
+        surface: 'rgb(var(--color-surface) / <alpha-value>)',
+        surface2: 'rgb(var(--color-surface2) / <alpha-value>)',
+        edge: 'rgb(var(--color-edge) / <alpha-value>)',
+        ink: 'rgb(var(--color-ink) / <alpha-value>)',
+        muted: 'rgb(var(--color-muted) / <alpha-value>)',
+        accent: 'rgb(var(--color-accent) / <alpha-value>)',
+        'accent-dim': 'rgb(var(--color-accent-dim) / <alpha-value>)',
       },
       fontFamily: {
         mono: ['"IBM Plex Mono"', 'ui-monospace', 'SFMono-Regular', 'monospace'],

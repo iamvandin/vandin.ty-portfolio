@@ -1,3 +1,5 @@
+import ThemeToggle from './ThemeToggle.jsx'
+
 const links = [
   { label: 'Services', href: '#services' },
   { label: 'Projects', href: '#projects' },
@@ -24,12 +26,15 @@ export default function Navbar({ name }) {
             </li>
           ))}
         </ul>
-        <a
-          href="#contact"
-          className="hidden rounded-sm border border-accent/40 px-3 py-1.5 font-mono text-xs text-accent hover:bg-accent/10 transition-colors sm:inline-block"
-        >
-          Hire Me
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href="#contact"
+            className="hidden rounded-sm border border-accent/40 px-3 py-1.5 font-mono text-xs text-accent hover:bg-accent/10 transition-colors sm:inline-block"
+          >
+            Hire Me
+          </a>
+          <ThemeToggle />
+        </div>
       </nav>
     </header>
   )

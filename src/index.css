@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Light theme (default) */
+:root {
+  --color-bg: 245 247 248;
+  --color-surface: 255 255 255;
+  --color-surface2: 238 242 243;
+  --color-edge: 216 223 227;
+  --color-ink: 16 24 32;
+  --color-muted: 91 103 115;
+  --color-accent: 15 148 133;
+  --color-accent-dim: 12 122 110;
+}
+
+/* Dark theme, applied when .dark is on <html> */
+.dark {
+  --color-bg: 15 23 32;
+  --color-surface: 21 31 43;
+  --color-surface2: 27 39 51;
+  --color-edge: 38 50 65;
+  --color-ink: 230 237 243;
+  --color-muted: 139 152 165;
+  --color-accent: 94 234 212;
+  --color-accent-dim: 45 212 191;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,26 +41,27 @@ html {
 }
 
 body {
-  background-color: #0F1720;
-  color: #E6EDF3;
+  background-color: rgb(var(--color-bg));
+  color: rgb(var(--color-ink));
   font-family: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
   background-image:
-    linear-gradient(rgba(94, 234, 212, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(94, 234, 212, 0.035) 1px, transparent 1px);
+    linear-gradient(rgb(var(--color-accent) / 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--color-accent) / 0.035) 1px, transparent 1px);
   background-size: 48px 48px;
   background-position: center top;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 ::selection {
-  background: #5EEAD4;
-  color: #0F1720;
+  background: rgb(var(--color-accent));
+  color: rgb(var(--color-bg));
 }
 
 :focus-visible {
-  outline: 2px solid #5EEAD4;
+  outline: 2px solid rgb(var(--color-accent));
   outline-offset: 2px;
 }
 
 .status-dot {
-  box-shadow: 0 0 0 3px rgba(94, 234, 212, 0.15);
+  box-shadow: 0 0 0 3px rgb(var(--color-accent) / 0.15);
 }
