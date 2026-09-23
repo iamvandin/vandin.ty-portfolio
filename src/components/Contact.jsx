@@ -1,4 +1,10 @@
-import { LinkedInIcon, GitHubIcon, MailIcon, UpworkIcon } from "./icons.jsx";
+import {
+  LinkedInIcon,
+  GitHubIcon,
+  MailIcon,
+  UpworkIcon,
+  TelegramIcon,
+} from "./icons.jsx";
 
 const channels = [
   {
@@ -20,10 +26,10 @@ const channels = [
     Icon: MailIcon,
   },
   {
-    label: "Upwork",
-    command: "open upwork.com/freelancers/vandin-ty",
-    href: "https://upwork.com/freelancers/vandin-ty",
-    Icon: UpworkIcon,
+    label: "Telegram",
+    command: "open t.me/vandin_ty",
+    href: "https://t.me/iamvandin",
+    Icon: TelegramIcon,
   },
 ];
 
