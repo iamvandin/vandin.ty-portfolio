@@ -1,4 +1,18 @@
-const stack = ['Linux', 'Docker', 'Bash', 'Microsoft 365', 'CI/CD', 'Networking']
+const stack = [
+  "Windows Server",
+  "Linux",
+  "Docker",
+  "Bash",
+  "Microsoft 365",
+  "CI/CD",
+  "Networking",
+  "Database",
+  "Git",
+  "PowerShell",
+  "Troubleshooting",
+  "Technical Support",
+  "Documentation",
+];
 
 export default function About() {
   return (
@@ -9,9 +23,9 @@ export default function About() {
         </div>
         <div className="sm:col-span-2">
           <p className="text-muted leading-relaxed">
-            IT professional with experience in technical support, troubleshooting
-            and infrastructure. Currently expanding into DevOps, automation,
-            Linux, containers and CI/CD.
+            IT professional with experience in technical support,
+            troubleshooting and infrastructure. Currently expanding into DevOps,
+            automation, Linux, containers and CI/CD.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-2">
@@ -27,5 +41,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }
