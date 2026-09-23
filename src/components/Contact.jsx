@@ -1,11 +1,31 @@
-import { LinkedInIcon, GitHubIcon, MailIcon, UpworkIcon } from './icons.jsx'
+import { LinkedInIcon, GitHubIcon, MailIcon, UpworkIcon } from "./icons.jsx";
 
 const channels = [
-  { label: 'LinkedIn', command: 'open linkedin.com/in/yourname', href: 'https://linkedin.com/in/yourname', Icon: LinkedInIcon },
-  { label: 'GitHub', command: 'open github.com/yourname', href: 'https://github.com/yourname', Icon: GitHubIcon },
-  { label: 'Email', command: 'mail you@example.com', href: 'mailto:you@example.com', Icon: MailIcon },
-  { label: 'Upwork', command: 'open upwork.com/freelancers/yourname', href: 'https://upwork.com/freelancers/yourname', Icon: UpworkIcon },
-]
+  {
+    label: "LinkedIn",
+    command: "open linkedin.com/in/vandin-ty-2678241ba",
+    href: "https://linkedin.com/in/vandin-ty-2678241ba",
+    Icon: LinkedInIcon,
+  },
+  {
+    label: "GitHub",
+    command: "open github.com/iamvandin",
+    href: "https://github.com/iamvandin",
+    Icon: GitHubIcon,
+  },
+  {
+    label: "Email",
+    command: "mail iamvandin168@gmail.com",
+    href: "mailto:iamvandin168@gmail.com",
+    Icon: MailIcon,
+  },
+  {
+    label: "Upwork",
+    command: "open upwork.com/freelancers/vandin-ty",
+    href: "https://upwork.com/freelancers/vandin-ty",
+    Icon: UpworkIcon,
+  },
+];
 
 export default function Contact() {
   return (
@@ -35,5 +55,5 @@ export default function Contact() {
         ))}
       </div>
     </section>
-  )
+  );
 }
