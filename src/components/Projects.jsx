@@ -2,6 +2,13 @@ import { ArrowIcon } from "./icons.jsx";
 
 const projects = [
   {
+    name: "Linux Server Monitoring, Alerting & Recovery Tool",
+    description:
+      "Developed a Bash-based Linux monitoring system that tracks CPU, memory, and disk usage and classifies system health into OK, WARNING, and CRITICAL states. The tool runs automatically through Cron, records monitoring activity, generates alerts when resource states change, tracks previous states to prevent repeated alerts, and detects recovery when a resource returns to a healthy state.",
+    tags: ["Linux", "Bash", "Cron", "Git", "Shell Scripting"],
+    href: "https://github.com/iamvandin/freelance-portfolio",
+  },
+  {
     name: "Linux Server Monitoring",
     description:
       "A lightweight monitoring setup that tracks CPU, memory, disk and service uptime across a fleet of Linux servers, with alerts on threshold breaches.",
